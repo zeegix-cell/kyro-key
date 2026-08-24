@@ -1,0 +1,8 @@
+{
+  "token": "BOT_TOKEN_HERE",
+  "clientId": "BOT_CLIENT_ID_HERE",
+  "serverUrl": "https://nine2i-license-server.onrender.com",
+  "adminToken": "ADMIN_TOKEN_HERE",
+  "adminIds": ["YOUR_DISCORD_ID"],
+  "guildId": "YOUR_GUILD_ID"
+}
