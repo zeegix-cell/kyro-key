@@ -3,7 +3,14 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 const path = require('path');
 
-const config = require('./config.json');
+const config = {
+  token: process.env.BOT_TOKEN,
+  clientId: process.env.BOT_CLIENT_ID,
+  serverUrl: process.env.SERVER_URL || 'https://nine2i-license-server.onrender.com',
+  adminToken: process.env.ADMIN_TOKEN || '',
+  adminIds: (process.env.ADMIN_IDS || '').split(',').filter(Boolean),
+  guildId: process.env.GUILD_ID,
+};
 
 const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers],
